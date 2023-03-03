@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1 class="form-title">Registration Form</h1>
+    </header>
+<div class="form-container">
+    <form name="registration" id="registration-form" class="right-section">
+        <div class="form-control">
+            <div id="error-firstName" class="error"></div>
+                <div>
+                <label>First Name:</label>
+                <input type="text" name="firstName" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-middleName" class="error"></div>
+                <div>
+                <label>Middle Name:</label>
+                <input type="text" name="middleName" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-lastName" class="error"></div>
+                <div>
+                <label>Last Name:</label>
+                <input type="text" name="lastName" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-birthday" class="error"></div>
+                <div>
+                <label>Birthdate:</label>
+                <input type="date" name="birthday" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-email" class="error"></div>
+                <div>
+                <label>Email :</label>
+                <input type="email" name="email" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-region" class="error"></div>
+            <div>
+            <label>Region</label>
+                <select name="region" class="text-field">
+                    <option value=""> -select one- </option>
+                    <option value="Region I -- Ilocos Region">Region I -- Ilocos Region</option>
+                    <option value="Region II -- Cagayan Valley">Region II -- Cagayan Valley</option>
+                    <option value="Region III -- Central Luzon">Region III -- Central Luzon</option>
+                    <option value="Region IV-A -- CALABARZON">Region IV-A -- CALABARZON</option>
+                    <option value="MIMAROPA Region">MIMAROPA Region</option>
+                    <option value="Region V -- Bicol Region">Region V -- Bicol Region</option>
+                    <option value="Region VI -- Western Visayas">Region VI -- Western Visayas</option>
+                    <option value="Region VII -- Central Visayas">Region VII -- Central Visayas</option>
+                    <option value="Region VIII -- Eastern Visayas">Region VIII -- Eastern Visayas</option>
+                    <option value="Region IX -- Zamboanga Peninsula">Region IX -- Zamboanga Peninsula</option>
+                    <option value="Region X -- Northern Mindano">Region X -- Northern Mindano</option>
+                    <option value="Region XI -- Davao Region">Region XI -- Davao Region</option>
+                    <option value="Region XII -- SOCCSKSARGEN">Region XII -- SOCCSKSARGEN</option>
+                    <option value="Region XIII -- Caraga">Region XIII -- Caraga</option>
+                    <option value="National Captial Region">National Captial Region</option>
+                    <option value="Cordillera Administrative Region">Cordillera Administrative Region</option>
+                    <option value="Bangsamoro Autobonous Region in Muslim Mindanao">Bangsamoro Autobonous Region in Muslim Mindanao</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-province" class="error"></div>
+                <div>
+                <label>Province:</label>
+                <input type="text" name="province" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-barangay" class="error"></div>
+                <div>
+                <label>Barangay:</label>
+                <input type="text" name="barangay" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-street" class="error"></div>
+            <div>
+                <label>Street:</label>
+                <input type="text" name="street" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-gender" class="error"></div>
+            <div>
+                <label>Gender :</label>
+
+                <label id="gender-error-1" class="container">
+                  Male
+                  <input type="radio" name="gender" value="Male" id="male"/>
+                  <span class="checkmark"></span>
+                </label>
+
+                <label id="gender-error-2" class="container">
+                    Female
+                    <input type="radio" name="gender" value="Female" id="female"/>
+                    <span class="checkmark"></span>
+                </label>
+
+                <label id="gender-error-3" class="container">
+                    Other
+                    <input type="radio" name="gender" value="Other" id="other"/>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            </div>
+        <div class="form-control">
+            <div id="error-vaccineBrand" class="error"></div>
+            <div>
+            <label>Brand of vaccine (Dose 1) </label>
+                <select name="vaccineBrand" class="text-field">
+                    <option value=""> -select one- </option>
+                    <option value="Pfizer-BioNTech">Pfizer-BioNTech</option>
+                    <option value="AstraZeneca">AstraZeneca</option>
+                    <option value="Coronavac">Coronavac</option>
+                    <option value="Sputnik V">Sputnik V</option>
+                    <option value="Janssen">Janssen</option>
+                    <option value="Covaxin">Covaxin</option>
+                    <option value="Moderna">Moderna</option>
+                    <option value="Sinopharm">Sinopharm</option>
+                    <option value="Covovax">Covovax</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-vaccineDate" class="error"></div>
+                <div>
+                <label >Date of Vaccination (Dose 1):</label>
+                <input type="date" name="vaccineDate" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-vaccineSite" class="error"></div>
+                <div>
+                <label >Vaccination (Dose 1) Site:</label>
+                <input type="text" name="vaccineSite" class="text-field">
+            </div>
+        </div>
+        <div class="form-control">
+            <div id="error-secondVaccine" class="error"></div>
+            <div>
+                <label>Did you already get your second vaccination?</label>
+                <label id="check-Yes" class="container">Yes
+                    <input type="radio" id="chkYes" name="secondVaccine" value="Yes" onclick="checkSecondVaccine()" />
+                    <span class="checkmark"></span>
+                </label>
+                <label id="check-No" class="container">No
+                    <input type="radio" id="chkNo" name="secondVaccine" value="No" onclick="checkSecondVaccine()" />
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div>
+        <div id="second-vaccine-visiblity">
+            <div class="form-control">
+                <div id="error-vaccineBrandDose2" class="error"></div>
+                <div>
+                <label for="vaccineBrandDose2">Brand of vaccine (Dose 2) </label>
+                    <select name="vaccineBrandDose2" disabled class="text-field">
+                        <option value=""> -select one- </option>
+                        <option value="Pfizer-BioNTech">Pfizer-BioNTech</option>
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Coronavac">Coronavac</option>
+                        <option value="Sputnik V">Sputnik V</option>
+                        <option value="Janssen">Janssen</option>
+                        <option value="Covaxin">Covaxin</option>
+                        <option value="Moderna">Moderna</option>
+                        <option value="Sinopharm">Sinopharm</option>
+                        <option value="Covovax">Covovax</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-control">
+                <div id="error-vaccineDateDose2" class="error"></div>
+                    <div>
+                    <label >Date of Vaccination (Dose 2):</label>
+                    <input type="date" name="vaccineDateDose2" disabled class="text-field">
+                </div>
+            </div>
+            <div class="form-control">
+            <div id="error-vaccineSiteDose2" class="error"></div>
+                <div>
+                    <label >Vaccination (Dose 2) Site:</label>
+                    <input type="text" name="vaccineSiteDose2" disabled class="text-field">
+                </div>
+            </div>
+        </div>
+        <div class="form-control buttons">
+            <button type="submit" name="submitBtn" class="btn-primary" id="buttonSubmit">Submit</button>
+            <button type="reset"  name="resetBtn" class="btn-primary" id="buttonReset">Reset</button>
+         </div>
+    </form>
+</div>
+<footer class="footer">
+    
+</footer>
+    <div class="left-section">
+        <div id="submission" class="submit-page">
+            <div class="form-control">
+                <div>
+                <label>First name:</label>
+                <label id="firstNameText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Middle name:</label>
+                <label id="middleNameText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Last name:</label>
+                <label id="lastNameText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Birthday:</label>
+                <label id="birthdayText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Email:</label>
+                <label id="emailText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Region:</label>
+                <label id="regionText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Province:</label>
+                <label id="provinceText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Barangay:</label>
+                <label id="barangayText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Street:</label>
+                <label id="streetText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Gender:</label>
+                <label id="genderText" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Vaccine Brand (Dose 1):</label>
+                <label id="vaccineBrandDose1Text" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Date of Vaccination (Dose 1):</label>
+                <label id="vaccineDateDose1Text" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Site of Vaccination (Dose 1):</label>
+                <label id="vaccineSiteDose1Text" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Second Vaccination?
+                </label>
+                <label id="secondVaccineText" class="submission-page-text"></label>
+                </div>
+            </div>
+       <div id="final-form-submision">
+            <div class="form-control">
+                <div>
+                <label>Vaccine Brand (Dose 2):</label>
+                <label id="vaccineBrandDose2Text" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Date of Vaccination (Dose 2):</label>
+                <label id="vaccineDateDose2Text" class="submission-page-text"></label>
+                </div>
+            </div>
+            <div class="form-control">
+                <div>
+                <label>Site of Vaccination (Dose 2):</label>
+                <label id="vaccineSiteDose2Text" class="submission-page-text"></label>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

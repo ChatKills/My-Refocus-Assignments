@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    background-color: #162040;
+    height: 75px;
+    padding: 0px 60px;
+
+}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: 1fr;
+    padding: 10px 40px;
+}
+
+.logo {
+    color: white;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.logo-text {
+    font-size: 30px;
+    display: none;
+}
+.logo-tablet {
+    display: none;
+}
+.menu-container {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-container {
+    display: none;
+    grid-column: 14/17;
+    grid-row: 1/2;
+    
+}
+.menu-1 {
+    margin-left: 27px;
+}
+.menu-2 {
+    margin-left: 27px;
+
+}
+.menu-3 {
+    margin-left: 27px;
+}
+
+@media only screen and (min-width: 320px) {
+    .logo-text {
+        display:block;
+        font-size: 30px;
+    }
+    .logo-tablet {
+        display: none;
+    }
+    .menu-container {
+        display: none;
+    }
+    .navbar {
+        padding: 0px 30px;
+    }
+}
+@media only screen and (min-width : 768px) {
+    .logo-text {
+        font-family: sans-serif;
+        font-size: 40px;
+        height: 100px;
+    }
+    .logo-tablet {
+        position: absolute;
+        display: block;
+    }
+    .menu-container {
+        display: flex;
+    }
+    .navbar {
+        padding: 0px 60px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .logo-text {
+        font-family: sans-serif;
+        font-size: 40px;
+        height: 100px;
+    }
+    .logo-tablet {
+        display: none;
+    }
+}
+

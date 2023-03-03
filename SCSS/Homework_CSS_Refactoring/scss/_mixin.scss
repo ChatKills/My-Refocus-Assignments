@@ -1,0 +1,37 @@
+@mixin triangle-horizontal($width-shape: 0, $height-shape: 0, $color-shape: red) {
+    width: $width-shape;
+    height: $height-shape;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-color: $color-shape;
+}
+
+@mixin triangle-vertical($width-shape: 0, $height-shape: 0, $color-shape: blue) {
+    width: $width-shape;
+    height: $height-shape;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-color: $color-shape;
+}
+
+@mixin ellipse-shape-horizontal() {
+    width: 180px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+@mixin ellipse-shape-vertical() {
+    width: 90px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+@mixin rectangle-shape-horizontal(){
+    width: 120px;
+    height: 80px;
+}
+
+@mixin rectangle-shape-vertical(){
+    width: 80px;
+    height: 120px;
+}

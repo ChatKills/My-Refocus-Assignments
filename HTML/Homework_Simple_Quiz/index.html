@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Quiz</title>
+</head>
+<body>
+    <form name="quiz" id="quiz-form">
+        <header class="form-title">
+        <h1 class="title">Simple Quiz</h1>
+        </header>
+        <div class="form-control">
+                <div class="question-1">
+                    <label class="question" for="answer">Question 1: What is the capital of the Philippines?</label> <br>
+                    <input type="text" id="answerField" name="answer"/>
+                    <div>
+                        <div id="result-question-1" class="invalid"></div>
+                    </div>
+                </div>
+        </div><br>
+        <div class="form-control">
+            <div class="question-2">
+                <label class="question">What is the value of x in this equation: x = 3 + 2 x 5.</label><br>
+                <label class="container">
+                    <input type="radio" name="questionTwo" value="25" id="question-2-choice-1" />
+                    <span class="checkmark"></span>
+                    x = 25
+                </label><br>
+                <label class="container">
+                    <input type="radio" name="questionTwo" value="13" id="question-2-choice-2" />
+                    <span class="checkmark"></span>
+                    x = 13
+                </label><br>
+                <label class="container">
+                    <input type="radio" name="questionTwo" value="18" id="question-2-choice-3" />
+                    <span class="checkmark"></span>
+                    x = 18
+                </label><br>
+                    <div>
+                        <div id="result-question-2" class="invalid"></div>
+                    </div>
+            </div>
+        </div><br>
+        <div class="form-control">
+            <div class="question-3">
+                <label class="question">Which of the following birds can fly? Choose 3 correct answers.</label><br>
+                <label class="container">
+                    <input type="checkbox" name="questionThree" value="Parrot" id="question-3-choice-1"/>
+                    <span class="chkbox"></span>
+                    Parrot
+                </label><br>
+                <label class="container">
+                    <input type="checkbox" name="questionThree" value="Eagle" id="question-3-choice-2"/>
+                    <span class="chkbox"></span>
+                    Eagle
+                </label><br>
+                <label class="container">
+                    <input type="checkbox" name="questionThree" value="Penguin" id="question-3-choice-3"/>
+                    <span class="chkbox"></span>
+                    Penguin
+                </label><br>
+                <label class="container">
+                    <input type="checkbox" name="questionThree" value="Crow" id="question-3-choice-4"/>
+                    <span class="chkbox"></span>
+                    Crow
+                </label><br>
+                <div>
+                    <div id="result-question-3" class="invalid"></div>
+                </div>
+            </div>
+        </div><br>
+        <footer class="footer">
+            <div class="form-control buttons">
+                    <button type="submit" name="submitBtn" class="btn-primary" id="buttonSubmit">Submit</button>
+                    <button type="reset"  name="resetBtn" class="btn-primary" id="buttonReset">Reset</button>
+            </div>
+            </footer>
+    </form>
+    
+</body>
+<script src="script.js"></script>
+</html>

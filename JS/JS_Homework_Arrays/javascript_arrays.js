@@ -1,0 +1,17 @@
+/**
+ * todo: Task is to unveil the hidden word using Javascript Arrays.
+ * @param: const letters
+ * @param: const order
+ * @param: let hiddenWord;
+ * ? Use For Loop statement 
+ * */
+
+const letters = ["E", "D" , "L", "T" , "E", "P", "B", "N", "M", "E", "E", "W" , "V" , "0", " "];            
+const order =   [11,   4,   6,  14,   1,   9,   12,  0,   2,   13,  5,   8,   10, 7, 3]
+
+let hiddenWord = " ";
+
+for (i = 0; i < order.length; i++) {
+    hiddenWord += letters[order[i]];
+    console.log(hiddenWord)
+}

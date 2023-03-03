@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #4ef6ae;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.hero img {
+    width: 100%;
+    height: 600px;
+}
+.banner-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 105px;
+}
+
+.banner {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 180px;
+    width: 70%;
+    padding: 15px 60px;
+}
+.banner-text {
+    border-left: 6px solid #525453;
+    padding: 9px 0px 9px 12px;
+}
+.cta-container {
+    display: flex;
+    justify-content: center;
+}
+.squircle {
+    text-align: center;
+    width: 200px;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+}
+.banner-text {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.cta-container {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.school-container img {
+    height: 120px;
+    width: 120px;
+    padding: 0px 50px;
+}
+.school-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    right: 50px;
+
+}
+.school-container {
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 30px;
+    height: 300px;
+    width: 50%;
+    padding: 60px;
+    margin: 30px 250px;
+}
+.info {
+    padding: 40px;
+}
+
+

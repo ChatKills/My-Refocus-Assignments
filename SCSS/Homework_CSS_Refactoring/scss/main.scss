@@ -1,0 +1,70 @@
+@use 'variables';
+@use 'mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+    place-items: center;
+  }
+  
+  .triangle-left {
+    @include mixin.triangle-vertical();
+    border-right: 100px solid variables.$color-blue;
+  }
+
+  .triangle-right {
+    @include mixin.triangle-vertical();
+    border-left: 100px solid variables.$color-green;
+  }
+  
+  .triangle-up {
+    @include mixin.triangle-horizontal();
+    border-bottom: 100px solid variables.$color-orange;
+  }
+  
+  .triangle-down {
+    @include mixin.triangle-horizontal();
+    border-top: 100px solid variables.$color-red;
+  }
+  
+  .ellipse-horizontal {
+    @include mixin.ellipse-shape-horizontal();
+  }
+  
+  .ellipse-vertical {
+    @include mixin.ellipse-shape-vertical();
+  }
+  
+  .rectangle-horizontal {
+    @include mixin.rectangle-shape-horizontal();
+  }
+  
+  .rectangle-vertical {
+    @include mixin.rectangle-shape-vertical();
+  }
+  
+  .orange {
+    background-color: variables.$color-orange;
+  }
+  
+  .red {
+    background-color: variables.$color-red;
+  }
+  
+  .green {
+    background-color: variables.$color-green;
+  }
+  
+  .blue {
+    background-color: variables.$color-blue;
+  }
+  
